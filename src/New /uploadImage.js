@@ -23,7 +23,7 @@ const UploadForm = () => {
             <input type="file" onChange={changeHandler} />
             <div className="output">
                 {error && <div className="error" style={{color:"red",marginTop:"5px",marginLeft:"56px"}}>{error}</div>}
-                {file && <div style={{color:"green",marginTop:"45px",marginLeft:"15px"}}>{file.name}</div>}
+                {file && <div style={{color:"green",marginTop:"5px",marginLeft:"5px"}}>{file.name}</div>}
                 {file && <ProgressBar file={file} setFile={setFile} />}
             </div>
         </form>
